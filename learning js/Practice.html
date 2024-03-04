@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    text-align: center;
+  }
+
+  button {
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .js-odd {
+    background-color: green;
+
+  }
+
+  .js-even {
+    background-color: gold;
+  }
+</style>
+
+<body>
+  <h1 id="time"></h1>
+  <button id="myBtn" onclick="btnPress()">0</button>
+
+
+  <script>
+    let countclick = 0;
+    function btnPress() {
+      let button = document.querySelector('#myBtn');
+      countclick++;
+      if (countclick % 2 == 0) {
+        button.classList.remove('js-odd');
+        button.classList.add('js-even');
+      }
+      else {
+        button.classList.remove('js-even');
+        button.classList.add('js-odd');
+      }
+      button.innerText = countclick;
+
+    }
+
+
+
+
+    function doGreeting(personName = "Dear") {
+      let date = new Date();
+      let dateTime = date.getHours();
+      let heading = document.querySelector('#time');
+      if (dateTime >= 4 && dateTime < 12) {
+        heading.innerText = `Good Morning ${personName}`;
+      }
+      else if (dateTime >= 12 && dateTime < 20) {
+        heading.innerText = `Good Aftoon ${personName}`;
+      }
+      else {
+        heading.innerText = `Good Night ${personName}`;
+      }
+    }
+    doGreeting('Prem');
+  </script>
+</body>
+
+</html>

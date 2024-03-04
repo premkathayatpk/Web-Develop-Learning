@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Window Object</h1>
+    <form name="person" action="" onsubmit="checkValid()">
+    <input type="password" size="5" name="pas" >
+</form>
+
+
+
+
+    <input type="button" value="Open New Window" onclick="openNewWindow('index.html')">
+    <script type="text/javascript">
+        function openNewWindow(url){
+        var wid = 400;
+        var hei = 800;
+        var winFeat = "width = "+ wid + ", height = " + hei + " , status, resizable";
+        myWin = window.open(url, "subWind", winFeat);
+    }
+    function display_alert(){
+        alert("Hi, This is an alert box.");
+    }
+    </script>
+</body>
+</html>

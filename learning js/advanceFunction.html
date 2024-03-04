@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <script>
+    //Anonymous function (IT has no function name)
+    let sum = function (num1, num2) {
+      return num1 + num2;
+    }
+    console.log(sum(4, 5));
+
+
+    let sum1 = (num1, num2) => {
+      return num1 + num2;
+    }
+    console.log(sum1(5, 6));
+
+    //setTimeOut
+    let alarm = function () {
+      console.log('Good Morning ');
+    };
+    //setTimeout(alarm, 2000);
+
+    // setInterval(alarm, 2000);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // let product = {
+    //   company: 'Mango',
+    //   price: 500,
+    //   'item-name': 'T-shirt',
+    //   displayPrice: function () {
+    //     console.log(`price of the product is ${this.price}`)
+    //   }
+    // };
+    // product.displayPrice();
+
+
+    // AutoBoxing
+    console.log('prem kathayat'.toUpperCase());
+    console.log('prem kathayat'.replace('prem kathayat', 'PK'));
+
+
+    // Object Reference
+
+    let a = 5;
+    let b = a;
+    console.log(`a=${a}, b=${b}`);
+    a = 8;
+    console.log(`a=${a}, b=${b}`);
+    let x = { num: 5 };
+    let y = x;
+    console.log(`x=${x.num}, y=${y.num}`);
+    x.num = 8;
+    console.log(`x=${x.num}, y=${y.num}`);
+
+    //Object  Shortcuts (De-structuring)
+    let product = {
+      company: 'Mango',
+      price: 500,
+      'item-name': 'T-shirt',
+
+    }
+    let { company, price } = product;
+    console.log(company);
+    console.log(price);
+
+
+
+  </script>
+</body>
+
+</html>

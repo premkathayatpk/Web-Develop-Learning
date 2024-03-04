@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Validation</title>
+    <link rel="stylesheet" href="register.css" />
+    <script src="register.js"></script>
+</head>
+
+<body>
+    <h1>Form Validation Using Javascript</h1>
+    <form action="#" method="post" onsubmit="return validateForm()" name="sighup">
+        <fieldset>
+            <legend>Registation Form</legend>
+
+            <div class="group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" />
+            </div>
+
+            <div class="group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" />
+            </div>
+
+            <div class="group">
+                <label for="Password">Password:</label>
+                <input type="password" id="Password" name="Password" />
+            </div>
+
+            <div class="group">
+                <label for="cPassword">Conform Password:</label>
+                <input type="password" id="cPassword" name="cPassword" />
+            </div>
+
+            <div class="group">
+                <label for="Phone">Phone:</label>
+                <input type="number" id="Phone" name="Phone" />
+            </div>
+
+            <div class="group">
+                <label for="Email">Email:</label>
+                <input type="text" id="Email" name="Email" />
+            </div>
+
+            <div class="group" id="DOB_group">
+                <label for="DOB">DOB:</label>
+                <input type="text" name="year" />
+                <input type="text" name="month" />
+                <input type="text" name="day" />
+
+            </div>
+
+
+            <div class="group">
+                <label for="Country">Country:</label>
+                <select name="Country">
+                    <option value="">Select Country</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="India">India</option>
+                    <option value="China">China</option>
+                    <option value="USA">USA</option>
+                </select>
+            </div>
+
+            <div class="group">
+                <label for="gender">Gender:</label>
+                <input type="radio" id="Male" name="gender" value="Male" /> Male
+                <input type="radio" id="Female" name="gender" value="Female" /> Female
+
+            </div>
+
+            <div class="group">
+                <label for="Faculty">Faculty:</label>
+                <input type="checkbox" id="BCA" name="Faculty[]" value="Female" /> BCA
+                <input type="checkbox" id="BIM" name="Faculty[]" value="Female" /> BIM
+                <input type="checkbox" id="BIT" name="Faculty[]" value="Female" /> BIT
+
+            </div>
+
+            <div class="group">
+
+                <input type="checkbox" id="term" name="term" value="I Accept Term and Condition " />I Accept Term and
+                Condition
+            </div>
+
+            <div class="group" id="btn_group">
+
+                <input type="submit" value="Sign Up" />
+                <input type="reset" value="Clear Form" />
+
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

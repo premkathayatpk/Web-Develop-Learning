@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+fieldset{
+    border: 1px solid #f5a;
+    margin: 20px 5px;
+    
+}
+legend{
+    border: 1px solid #5a5;
+}
+
+.group{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+  width: 80%;
+}
+.group label{
+    width: 100px;
+    display: inline-block;
+}
+
+.group#DOB_group input{
+    width: 16%;
+}
+.group input,select{
+    width: 75%;
+    height: 20px;
+}
+.group input[type=radio],input[type=checkbox]{
+    width: 5%;
+}
+.group input[type=submit],input[type=reset]{
+    border: none;
+    background-color: #f50;
+    color: #ffff;
+    padding: 5px;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 700;
+}

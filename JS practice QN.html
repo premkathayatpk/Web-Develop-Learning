@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Object practice QN--------
+      //--------QN.1--------------
+      const product = {
+        title: "Ball Pan",
+        rating: 4,
+        offer: 5,
+        price: 270,
+      };
+      console.log(product);
+
+      //-----------QN.2-------------
+      const profile = {
+        fullName: "Prem Kathayat",
+        isFollow: true,
+        post: 100,
+        followers: 1000,
+        following: 10,
+        details: "My name is prem katjhayat",
+      };
+      console.log(profile);
+
+      //---------condition practice QN-------
+      //----------QN.1------------
+      //Get a number and chake it a multiple of 5 or not
+
+      //    let num= window.prompt("Enter a number");
+
+      //     if(num%5==0){
+      //         console.log(num," is multiple of 5.");
+      //     }
+      //     else{
+      //         console.log(num," is not multiple of 5.")
+      //     }
+
+      //  ---------------QN.2--------------
+      // Grade of student
+      //  let mark= window.prompt("Enter your marks");
+      //  if(mark>=80 && mark<=100){
+      //     console.log("A");
+      //  }
+      //  else if(mark>=70 && mark<=69){
+      //     console.log("B");
+      //  }
+
+      //  if(mark>=60 && mark<=69){
+      //     console.log("C");
+      //  }
+
+      //  if(mark>=50 && mark<=59){
+      //     console.log("D");
+      //  }
+      //  else if(mark>=0 && mark<=40){
+      //     console.log("F")
+      //  }
+
+      //----------Array-----------
+      //---------QN.1----------
+      let marks = [85, 97, 44, 37, 76, 60];
+      let sum = 0;
+      for (let val of marks) {
+        sum += val;
+      }
+      let avg = sum / marks.length;
+      console.log(`Average marks is ${avg}`);
+
+      //-----------QN.2----------
+      let items = [250, 645, 300, 900, 50];
+      fprice = 0;
+      for (let price of items) {
+        fprice = price - price / 10;
+        console.log(fprice);
+      }
+
+      //---------Function ----------------
+      //----------QN.1--------------
+
+      function countVowel(str) {
+        let count = 0;
+        for (const char of str) {
+          if (
+            char === "a" ||
+            char === "e" ||
+            char === "i" ||
+            char === "o" ||
+            char === "u"
+          ) {
+            count++;
+            console.log(char);
+          }
+        }
+       
+        console.log(count);
+      }
+    </script>
+  </body>
+</html>

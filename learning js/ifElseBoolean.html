@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>if-else & Boolean</title>
+</head>
+
+<body>
+
+  <h1>Metro Ticket</h1>
+  Enter your age:
+  <input type="number" id="age" name="age">
+
+  <button id="dis-btn" onclick="discount()">Discount</button>
+
+  <div id="discountMessage"></div>
+
+  <script>
+    function discount() {
+      let age = parseInt(document.querySelector('#age').value);
+      let gender = 'female'; // Assuming gender is constant for the sake of this example
+      let finalDiscount;
+      if (gender === 'female') {
+        finalDiscount = 50;
+      }
+      else if (age <= 5) {
+        finalDiscount = 100;
+      } else if (age <= 8) {
+        finalDiscount = 50;
+      } else if (age >= 65) {
+        finalDiscount = 30;
+        if (gender === 'female') {
+          finalDiscount = 50;
+        }
+      } else {
+        finalDiscount = 0;
+      }
+
+      document.querySelector('#discountMessage').innerText = `You get ${finalDiscount}% off.`;
+    }
+  </script>
+</body>
+
+</html>

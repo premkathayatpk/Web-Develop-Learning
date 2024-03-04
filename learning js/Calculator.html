@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+  <div id="calculator">
+    <input type="text" id="display">
+    <div class="btn-container">
+      <button class="button" onclick="ForC()">C</button>
+      <button class="button" onclick="For1()">1</button>
+      <button class="button" onclick="For2()">2</button>
+      <button class="button" onclick="ForAdd()">+</button>
+      <button class="button" onclick="For3()">3</button>
+      <button class="button" onclick="For4()">4</button>
+      <button class="button" onclick="ForSub()">-</button>
+      <button class="button" onclick="For5()">5</button>
+      <button class="button" onclick="For6()">6</button>
+      <button class="button" onclick="ForMul()">*</button>
+      <button class="button" onclick="For7()">7</button>
+      <button class="button" onclick="For8()">8</button>
+      <button class="button" onclick="ForDiv()">/</button>
+      <button class="button" onclick="ForEal()">=</button>
+      <button class="button" onclick="For9()">9</button>
+      <button class="button" onclick="For0()">0</button>
+      <button class="button" onclick="ForDot()">.</button>
+
+    </div>
+  </div>
+
+
+  <script>
+    let currentDisplay = '';
+    document.querySelector('#display').value = currentDisplay;
+    function ForC() {
+      currentDisplay = ''
+      document.querySelector('#display').value = currentDisplay;
+    }
+
+    function For1() {
+      currentDisplay += '1'
+      document.querySelector('#display').value = currentDisplay;
+    }
+    function For2() {
+      currentDisplay += '2'
+      document.querySelector('#display').value = currentDisplay;
+    }
+    function ForAdd() {
+      currentDisplay += '+'
+      document.querySelector('#display').value = currentDisplay;
+    }
+    function For3() {
+      currentDisplay += '3'
+      document.querySelector('#display').value = currentDisplay;
+    }
+    function For4() {
+      currentDisplay += '4'
+      document.querySelector('#display').value = currentDisplay;
+    }
+    function ForSub() {
+      currentDisplay += '-'
+      document.querySelector('#display').value = currentDisplay;
+    }
+    function For5() {
+      currentDisplay += '5'
+      document.querySelector('#display').value = currentDisplay;
+    }
+    function For6() {
+      currentDisplay += '6'
+      document.querySelector('#display').value = currentDisplay;
+    }
+    function ForMul() {
+      currentDisplay += '*'
+      document.querySelector('#display').value = currentDisplay;
+    }
+    function For7() {
+      currentDisplay += '7'
+      document.querySelector('#display').value = currentDisplay;
+    }
+    function For8() {
+      currentDisplay += '8'
+      document.querySelector('#display').value = currentDisplay;
+    }
+    function ForDiv() {
+      currentDisplay += '/'
+      document.querySelector('#display').value = currentDisplay;
+    }
+    function ForEal() {
+
+      currentDisplay = eval(currentDisplay);
+      document.querySelector('#display').value = currentDisplay;
+    }
+    function For9() {
+      currentDisplay += '9'
+      document.querySelector('#display').value = currentDisplay;
+    }
+    function For0() {
+      currentDisplay += '0'
+      document.querySelector('#display').value = currentDisplay;
+    }
+    function ForDot() {
+      currentDisplay += '.'
+      document.querySelector('#display').value = currentDisplay;
+    }
+  </script>
+
+</body>
+
+</html>
